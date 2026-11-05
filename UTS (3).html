@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Faris Pratista Febriano</title>
+  <meta name="description" content="Skills and interests of Faris Pratista Febriano.">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <meta name="theme-color" content="#001233">
+  <link rel="preload" href="Font/Rodin Pro EB.otf" as="font" type="font/otf" crossorigin>
+  <script>if (sessionStorage.getItem("p3r-transition")) document.documentElement.classList.add("is-incoming");</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="skills">
+  <div class="mobile-warning">
+    <p>Sorry, this website is not supported for your device.</p>
+    <p>Try viewing this site on a computer!</p>
+  </div>
+
+  <div id="page-cover" class="page-cover" aria-hidden="true"></div>
+
+  <section id="skill-page" class="p3r-slink-screen active" role="region" aria-label="Skills Stats Screen">
+    <div class="slink-video-container" aria-hidden="true">
+      <video id="skill-bg-video" class="slink-bg-video" loop muted playsinline preload="none">
+        <source src="vidio/makoto-wallpaper.mp4" type="video/mp4">
+      </video>
+      <div class="slink-video-overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="slink-viewport">
+      <div class="slink-left-column p3r-skill-left-column">
+        <div class="slink-profile-header" aria-hidden="true">
+          <div class="slink-profile-name">FARIS PRATISTA FEBRIANO</div>
+        </div>
+        <div class="p3r-geometric-header" id="skill-header-div">
+          <div class="p3r-shard-back-band" aria-hidden="true"></div>
+          <div class="p3r-header-slash-main" aria-hidden="true"></div>
+          <h1 class="p3r-banner-title">SKILLS</h1>
+        </div>
+        <div class="p3r-skill-tabs" id="skill-tabs-nav" role="tablist" aria-label="Skill Categories"></div>
+        <div id="p3r-skills-container" class="p3r-skills-container" role="region" aria-label="Skill Stats List"></div>
+      </div>
+
+      <div class="slink-bottom-hud">
+        <div class="buttons-row">
+          <button id="skill-tab-prev-btn" class="control-item slink-hud-btn" aria-label="Previous Category">
+            <div class="control-key">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </div>
+            <span class="control-text">Prev</span>
+          </button>
+          <button id="skill-tab-next-btn" class="control-item slink-hud-btn" aria-label="Next Category">
+            <div class="control-key">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+            <span class="control-text">Next</span>
+          </button>
+          <button id="skill-back-btn" class="control-item slink-hud-btn" aria-label="Close Skills Screen">
+            <div class="control-key">ESC</div>
+            <span class="control-text">Close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <audio id="sfx-navigation-el" src="lagu/navigation.wav" preload="auto"></audio>
+  <audio id="sfx-close-menu-el" src="lagu/close-menu.mp3" preload="auto"></audio>
+  <audio id="background-music" src="lagu/bg.mp3" preload="auto" loop></audio>
+  <script src="interaction.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faris Pratista Febriano | Persona Inspired Portfolio</title>
+  <meta name="description" content="A personal portfolio by Faris Pratista Febriano, Library and Information Science student at UIN Jakarta, inspired by Persona 3 Reload.">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <meta name="theme-color" content="#001233">
+  <link rel="preload" href="Font/Rodin Pro EB.otf" as="font" type="font/otf" crossorigin>
+  <script>if (sessionStorage.getItem("p3r-transition")) document.documentElement.classList.add("is-incoming");</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="menu">
+  <div class="mobile-warning">
+    <p>Sorry, this website is not supported for your device.</p>
+    <p>Try viewing this site on a computer!</p>
+  </div>
+
+  <div id="page-cover" class="page-cover" aria-hidden="true"></div>
+
+  <div id="loading-screen" class="p3r-loading-screen" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+    <div class="loading-hud-bottom">
+      <div class="loading-text-row">
+        <h2 class="loading-title">NOW LOADING<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></h2>
+      </div>
+      <div class="loading-bar-wrap">
+        <div class="loading-track">
+          <div id="loading-bar" class="loading-fill"></div>
+        </div>
+        <div id="loading-percent" class="loading-percent">0%</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="p3r-main">
+    <div class="p3r-global-vignette" aria-hidden="true"></div>
+    <video id="background-video-intro" class="background-video bg-video-intro" src="vidio/bg-intro.mp4" muted playsinline preload="metadata"></video>
+    <video id="background-video-loop" class="background-video bg-video-loop" src="vidio/bg-loop.mp4" loop muted playsinline preload="none"></video>
+
+    <div id="side-number" class="side-number">
+      <span>01</span>
+    </div>
+    <div id="menu-profile-header" class="menu-profile-header" aria-hidden="true">
+      <div class="profile-name-text">FARIS PRATISTA FEBRIANO</div>
+      <div class="profile-accent-line"></div>
+    </div>
+    <div id="menu-column" class="menu-column">
+      <div id="options-list" class="options-list"></div>
+    </div>
+
+    <div class="hud-controls">
+      <div class="buttons-row">
+        <div class="control-item">
+          <div class="control-key">ENTER</div>
+          <span class="control-text">Confirm</span>
+        </div>
+        <div class="control-item">
+          <div class="control-key">ESC</div>
+          <span class="control-text">Close</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <audio id="sfx-menu-utama-el" src="lagu/menu-utama.mp3" preload="auto"></audio>
+  <audio id="sfx-navigation-el" src="lagu/navigation.wav" preload="auto"></audio>
+  <audio id="sfx-close-menu-el" src="lagu/close-menu.mp3" preload="auto"></audio>
+  <audio id="background-music" src="lagu/bg.mp3" preload="auto" loop></audio>
+  <script src="interaction.js"></script>
+</body>
+</html>
